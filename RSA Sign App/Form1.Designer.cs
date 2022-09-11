@@ -113,6 +113,7 @@
             this.btnGenerateSign.TabIndex = 7;
             this.btnGenerateSign.Text = "Generate Signature ";
             this.btnGenerateSign.UseVisualStyleBackColor = true;
+            this.btnGenerateSign.Click += new System.EventHandler(this.btnGenerateSign_Click);
             // 
             // btnVerifySign
             // 
@@ -122,6 +123,7 @@
             this.btnVerifySign.TabIndex = 8;
             this.btnVerifySign.Text = "Verify Signature";
             this.btnVerifySign.UseVisualStyleBackColor = true;
+            this.btnVerifySign.Click += new System.EventHandler(this.btnVerifySign_Click);
             // 
             // Form1
             // 

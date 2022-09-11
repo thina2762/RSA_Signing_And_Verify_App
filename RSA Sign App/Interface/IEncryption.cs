@@ -18,5 +18,16 @@ namespace RSA_Sign_App.Interface
         /// returns in a base 64 string format.
         /// </returns>
         string GenerateRSASignature(string strBaseString, string strPrivateKeyLocation, string strHash);
+        /// <summary>
+        /// This function is to verify the sign  payload using the public key.
+        /// </summary>
+        /// <param name="strSignValue"></param>
+        /// <param name="strMessage"></param>
+        /// <param name="strPublicKeyLocations"></param>
+        /// <param name="strHash"></param>
+        /// <returns>
+        /// this functions returns boolean value.
+        /// </returns>
+        bool VerifySigning(string strSignValue, string strMessage, string strPublicKeyLocations, string strHash);
     }
 }
